@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "column-rule-color"
   ],
   "css-column-rule-color": {
     "type": "git",
