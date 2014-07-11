@@ -23,20 +23,20 @@ or download the css on github and include in your project.
 .crc-transparent {  column-rule-color: transparent; }
 .crc-i {            column-rule-color: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .crc-drkgry-ns {       column-rule-color: $dark-gray; }
   .crc-transparent-ns {  column-rule-color: transparent; }
   .crc-i-ns {            column-rule-color: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .crc-drkgry-m {       column-rule-color: $dark-gray; }
   .crc-transparent-m {  column-rule-color: transparent; }
   .crc-i-m {            column-rule-color: inherit; }
 
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .crc-drkgry-l {       column-rule-color: $dark-gray; }
   .crc-transparent-l {  column-rule-color: transparent; }
   .crc-i-l {            column-rule-color: inherit; }
