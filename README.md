@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-column-rule-color)
 ## File Size
 
 841B column-rule-color.css
-841B column-rule-color.scss
+841B column-rule-color.scss 
+1minified and gzipped
 
 ## The Code
 ```
