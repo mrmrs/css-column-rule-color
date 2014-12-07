@@ -1,5 +1,6 @@
 {
   "name": "css-column-rule-color",
+  "style": "column-rule-color.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-column-rule-color",
   "description": "Css module of single purpose classes for column rule color",
