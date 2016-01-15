@@ -1,15 +1,22 @@
+/*
+   COLUMN RULE COLOR
+*/
+.crc-drkgry { column-rule-color: $dark-gray; }
+.crc-transparent { column-rule-color: transparent; }
+.crc-i { column-rule-color: inherit; }
+@media screen and (min-width: 48em) {
+ .crc-drkgry-ns { column-rule-color: $dark-gray; }
+ .crc-transparent-ns { column-rule-color: transparent; }
+ .crc-i-ns { column-rule-color: inherit; }
+}
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .crc-drkgry-m { column-rule-color: $dark-gray; }
+ .crc-transparent-m { column-rule-color: transparent; }
+ .crc-i-m { column-rule-color: inherit; }
+}
+@media screen and (min-width: 64em) {
+ .crc-drkgry-l { column-rule-color: $dark-gray; }
+ .crc-transparent-l { column-rule-color: transparent; }
+ .crc-i-l { column-rule-color: inherit; }
+}
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
