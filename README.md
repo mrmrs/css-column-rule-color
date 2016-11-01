@@ -1,10 +1,10 @@
-# css-column-rule-color 0.0.7
+# css-column-rule-color 1.0.6
 
 Css module of single purpose classes for column rule color
 
 #### Stats
 
-213 | 12 | 12
+242 | 12 | 36
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-column-rule-color
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-column-rule-color
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-column-rule-color.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-column-rule-color";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-column-rule-color@1.0.6/css/css-column-rule-color.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,32 +68,32 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    COLUMN RULE COLOR
 */
-.crc-drkgry { column-rule-color: $dark-gray; }
-.crc-transparent { column-rule-color: transparent; }
-.crc-i { column-rule-color: inherit; }
+.crc-drkgry { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
+.crc-transparent { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
+.crc-i { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
 @media screen and (min-width: 48em) {
- .crc-drkgry-ns { column-rule-color: $dark-gray; }
- .crc-transparent-ns { column-rule-color: transparent; }
- .crc-i-ns { column-rule-color: inherit; }
+ .crc-drkgry-ns { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
+ .crc-transparent-ns { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
+ .crc-i-ns { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .crc-drkgry-m { column-rule-color: $dark-gray; }
- .crc-transparent-m { column-rule-color: transparent; }
- .crc-i-m { column-rule-color: inherit; }
+ .crc-drkgry-m { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
+ .crc-transparent-m { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
+ .crc-i-m { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
 }
 @media screen and (min-width: 64em) {
- .crc-drkgry-l { column-rule-color: $dark-gray; }
- .crc-transparent-l { column-rule-color: transparent; }
- .crc-i-l { column-rule-color: inherit; }
+ .crc-drkgry-l { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
+ .crc-transparent-l { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
+ .crc-i-l { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
 }
 ```
 
@@ -95,3 +113,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
