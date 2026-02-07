@@ -30,9 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.3.0"
   },
   "scripts": {
-    "start": "tachyons src/css-column-rule-color.css > css/css-column-rule-color.css && tachyons src/css-column-rule-color.css --minify > css/css-column-rule-color.min.css && tachyons src/css-column-rule-color.css --generate-docs --package=../../package.json > readme.md"
   }
 }
