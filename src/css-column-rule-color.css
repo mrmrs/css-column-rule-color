@@ -7,9 +7,9 @@
 .crc-i {            column-rule-color: inherit; }
 
 @media screen and (min-width: 48em) {
-  .crc-drkgry-ns {       column-rule-color: $dark-gray; }
-  .crc-transparent-ns {  column-rule-color: transparent; }
-  .crc-i-ns {            column-rule-color: inherit; }
+  .crc-drkgry-s {       column-rule-color: $dark-gray; }
+  .crc-transparent-s {  column-rule-color: transparent; }
+  .crc-i-s {            column-rule-color: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
