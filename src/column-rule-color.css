@@ -6,20 +6,20 @@
 .crc-transparent {  column-rule-color: transparent; }
 .crc-i {            column-rule-color: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .crc-drkgry-s {       column-rule-color: $dark-gray; }
   .crc-transparent-s {  column-rule-color: transparent; }
   .crc-i-s {            column-rule-color: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .crc-drkgry-m {       column-rule-color: $dark-gray; }
   .crc-transparent-m {  column-rule-color: transparent; }
   .crc-i-m {            column-rule-color: inherit; }
 
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .crc-drkgry-l {       column-rule-color: $dark-gray; }
   .crc-transparent-l {  column-rule-color: transparent; }
   .crc-i-l {            column-rule-color: inherit; }
