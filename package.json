@@ -1,38 +1,44 @@
 {
   "name": "css-column-rule-color",
-  "style": "column-rule-color.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-column-rule-color",
-  "description": "Css module of single purpose classes for column rule color",
+  "version": "2.0.0",
+  "description": "Functional CSS for column-rule-color",
+  "style": "dist/column-rule-color.css",
+  "main": "dist/column-rule-color.css",
+  "exports": {
+    ".": "./dist/column-rule-color.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "column-rule-color"
+    "column-rule-color",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-column-rule-color": {
+  "homepage": "https://github.com/mrmrs/css-column-rule-color",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-column-rule-color.git"
+    "url": "https://github.com/mrmrs/css-column-rule-color.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-column-rule-color/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-column-rule-color/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
