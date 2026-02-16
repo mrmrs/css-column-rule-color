@@ -1,116 +1,80 @@
-# css-column-rule-color 1.0.6
+# css-column-rule-color
 
-Css module of single purpose classes for column rule color
+Functional CSS for column-rule-color
 
-#### Stats
+## Filesize
 
-242 | 12 | 36
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/column-rule-color.css` | 777 bytes |
+| `dist/column-rule-color.min.css` | 601 bytes (168 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-column-rule-color
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-column-rule-color
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-column-rule-color.git
+```sh
+npm install css-column-rule-color
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-column-rule-color";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-column-rule-color@1.0.6/css/css-column-rule-color.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-column-rule-color">
+<link rel="stylesheet" href="https://unpkg.com/css-column-rule-color/dist/column-rule-color.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   COLUMN RULE COLOR
-*/
-.crc-drkgry { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
-.crc-transparent { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
-.crc-i { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
-@media screen and (min-width: 48em) {
- .crc-drkgry-ns { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
- .crc-transparent-ns { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
- .crc-i-ns { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .crc-drkgry-m { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
- .crc-transparent-m { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
- .crc-i-m { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
-}
-@media screen and (min-width: 64em) {
- .crc-drkgry-l { -webkit-column-rule-color: $dark-gray; -moz-column-rule-color: $dark-gray; column-rule-color: $dark-gray; }
- .crc-transparent-l { -webkit-column-rule-color: transparent; -moz-column-rule-color: transparent; column-rule-color: transparent; }
- .crc-i-l { -webkit-column-rule-color: inherit; -moz-column-rule-color: inherit; column-rule-color: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-column-rule-color/dist/column-rule-color.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.crc-drkgry` | `column-rule-color: $dark-gray;` |
+| `.crc-transparent` | `column-rule-color: transparent;` |
+| `.crc-i` | `column-rule-color: inherit;` |
+| `.crc-drkgry-s` | `column-rule-color: $dark-gray;` |
+| `.crc-transparent-s` | `column-rule-color: transparent;` |
+| `.crc-i-s` | `column-rule-color: inherit;` |
+| `.crc-drkgry-m` | `column-rule-color: $dark-gray;` |
+| `.crc-transparent-m` | `column-rule-color: transparent;` |
+| `.crc-i-m` | `column-rule-color: inherit;` |
+| `.crc-drkgry-l` | `column-rule-color: $dark-gray;` |
+| `.crc-transparent-l` | `column-rule-color: transparent;` |
+| `.crc-i-l` | `column-rule-color: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.crc-drkgry-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/column-rule-color.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/column-rule-color.css` — formatted
+- `dist/column-rule-color.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
